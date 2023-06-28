@@ -1,0 +1,61 @@
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #19C3FB;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffe14d;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+}
+
+button {
+  background-color: #ffe14d;
+  color: #7a7c0b;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#weather-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#weather-info p {
+  margin-bottom: 10px;
+}
+
+#weather-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  animation: moveImage 20s linear infinite;
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
